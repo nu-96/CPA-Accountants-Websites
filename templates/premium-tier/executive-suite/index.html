@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{FIRM_NAME}} | Elite Accounting & Advisory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0c1829',
+                        secondary: '#1e3a5f',
+                        accent: '#c9a959',
+                        platinum: '#e5e4e2'
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gradient-gold { background: linear-gradient(135deg, #c9a959 0%, #f0e68c 50%, #c9a959 100%); }
+        .text-gradient { background: linear-gradient(135deg, #c9a959 0%, #f0e68c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="bg-primary text-white antialiased">
+    <!-- Announcement Bar -->
+    <div class="bg-accent text-primary text-sm py-2 text-center font-medium">
+        <span>📞 Schedule your complimentary consultation: <a href="tel:{{PHONE}}" class="underline">{{PHONE}}</a></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-primary/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-heading font-bold">
+                    <span class="text-gradient">{{FIRM_NAME}}</span>
+                </a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-white hover:text-accent transition">Home</a>
+                    <a href="services.html" class="text-platinum/70 hover:text-accent transition">Services</a>
+                    <a href="industries.html" class="text-platinum/70 hover:text-accent transition">Industries</a>
+                    <a href="team.html" class="text-platinum/70 hover:text-accent transition">Team</a>
+                    <a href="insights.html" class="text-platinum/70 hover:text-accent transition">Insights</a>
+                    <a href="contact.html" class="text-platinum/70 hover:text-accent transition">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="portal.html" class="text-platinum/70 hover:text-white transition hidden sm:block">Client Portal</a>
+                    <a href="contact.html" class="bg-accent text-primary px-6 py-2.5 rounded font-semibold hover:bg-accent/90 transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop" alt="Modern architecture" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 py-24">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-px bg-accent"></div>
+                    <span class="text-accent uppercase tracking-widest text-sm font-medium">Premium Advisory</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-heading font-bold leading-tight mb-8">
+                    Elevate Your <span class="text-gradient">Financial Future</span>
+                </h1>
+                <p class="text-xl text-platinum/70 mb-10 leading-relaxed">
+                    Bespoke accounting, tax strategy, and wealth advisory services for discerning businesses and high-net-worth individuals.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="contact.html" class="group bg-accent text-primary px-8 py-4 rounded font-semibold hover:bg-white transition inline-flex items-center gap-3">
+                        Schedule Consultation
+                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </a>
+                    <a href="services.html" class="glass text-white px-8 py-4 rounded font-semibold hover:bg-white/10 transition">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Overlay -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="glass rounded-t-2xl p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-heading font-bold text-accent">${{AUM}}B+</div>
+                            <div class="text-platinum/70 text-sm mt-1">Assets Under Advisement</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-heading font-bold text-accent">{{YEARS}}+</div>
+                            <div class="text-platinum/70 text-sm mt-1">Years of Excellence</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-heading font-bold text-accent">{{TEAM}}+</div>
+                            <div class="text-platinum/70 text-sm mt-1">Expert Professionals</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-heading font-bold text-accent">Top 1%</div>
+                            <div class="text-platinum/70 text-sm mt-1">Client Retention</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-secondary/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-px bg-accent"></div>
+                    <span class="text-accent uppercase tracking-widest text-sm">Our Expertise</span>
+                    <div class="w-8 h-px bg-accent"></div>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold mb-4">Comprehensive Solutions</h2>
+                <p class="text-platinum/70 max-w-2xl mx-auto">Tailored services designed for complex financial landscapes and ambitious growth goals.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="glass rounded-2xl p-10 hover:bg-white/5 transition group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-xl bg-accent/20 flex items-center justify-center mb-6 group-hover:bg-accent/30 transition">
+                        <i class="fas fa-chess text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-semibold mb-4">Tax Strategy</h3>
+                    <p class="text-platinum/70 mb-6">Multi-year tax planning, entity structuring, M&A tax due diligence, and international tax optimization.</p>
+                    <a href="services.html#tax" class="text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                        Learn More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <div class="glass rounded-2xl p-10 hover:bg-white/5 transition group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 rounded-xl bg-accent/20 flex items-center justify-center mb-6 group-hover:bg-accent/30 transition">
+                        <i class="fas fa-gem text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-semibold mb-4">Wealth Advisory</h3>
+                    <p class="text-platinum/70 mb-6">Estate planning, family office services, investment advisory, and generational wealth transfer strategies.</p>
+                    <a href="services.html#wealth" class="text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                        Learn More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <div class="glass rounded-2xl p-10 hover:bg-white/5 transition group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 rounded-xl bg-accent/20 flex items-center justify-center mb-6 group-hover:bg-accent/30 transition">
+                        <i class="fas fa-building text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-semibold mb-4">Business Advisory</h3>
+                    <p class="text-platinum/70 mb-6">CFO services, financial modeling, capital raising support, and strategic growth consulting.</p>
+                    <a href="services.html#advisory" class="text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                        Learn More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mt-8">
+                <div class="glass rounded-2xl p-10 hover:bg-white/5 transition group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-start gap-6">
+                        <div class="w-16 h-16 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 transition">
+                            <i class="fas fa-gavel text-2xl text-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-semibold mb-4">Audit & Assurance</h3>
+                            <p class="text-platinum/70 mb-4">Financial statement audits, SOC examinations, agreed-upon procedures, and compliance reviews.</p>
+                            <a href="services.html#audit" class="text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl p-10 hover:bg-white/5 transition group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-start gap-6">
+                        <div class="w-16 h-16 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 transition">
+                            <i class="fas fa-robot text-2xl text-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-semibold mb-4">Technology Solutions</h3>
+                            <p class="text-platinum/70 mb-4">ERP implementations, workflow automation, data analytics, and digital transformation consulting.</p>
+                            <a href="services.html#tech" class="text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-px bg-accent"></div>
+                        <span class="text-accent uppercase tracking-widest text-sm">Industry Focus</span>
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-heading font-bold mb-6">Specialized Expertise</h2>
+                    <p class="text-platinum/70 mb-8">Deep industry knowledge allows us to anticipate challenges and identify opportunities specific to your sector.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass rounded-xl p-5 hover:bg-white/5 transition">
+                            <i class="fas fa-building text-accent mb-3"></i>
+                            <div class="font-semibold">Real Estate</div>
+                        </div>
+                        <div class="glass rounded-xl p-5 hover:bg-white/5 transition">
+                            <i class="fas fa-laptop-code text-accent mb-3"></i>
+                            <div class="font-semibold">Technology</div>
+                        </div>
+                        <div class="glass rounded-xl p-5 hover:bg-white/5 transition">
+                            <i class="fas fa-heartbeat text-accent mb-3"></i>
+                            <div class="font-semibold">Healthcare</div>
+                        </div>
+                        <div class="glass rounded-xl p-5 hover:bg-white/5 transition">
+                            <i class="fas fa-shopping-bag text-accent mb-3"></i>
+                            <div class="font-semibold">Retail & E-comm</div>
+                        </div>
+                        <div class="glass rounded-xl p-5 hover:bg-white/5 transition">
+                            <i class="fas fa-industry text-accent mb-3"></i>
+                            <div class="font-semibold">Manufacturing</div>
+                        </div>
+                        <div class="glass rounded-xl p-5 hover:bg-white/5 transition">
+                            <i class="fas fa-user-tie text-accent mb-3"></i>
+                            <div class="font-semibold">Professional Svcs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=600&h=700&fit=crop" alt="Modern office" class="rounded-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-accent text-primary p-6 rounded-xl">
+                        <div class="text-3xl font-heading font-bold">{{INDUSTRIES}}+</div>
+                        <div class="text-sm">Industries Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview -->
+    <section class="py-24 bg-secondary/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-px bg-accent"></div>
+                    <span class="text-accent uppercase tracking-widest text-sm">Leadership</span>
+                    <div class="w-8 h-px bg-accent"></div>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-bold mb-4">Meet Our Partners</h2>
+                <p class="text-platinum/70 max-w-2xl mx-auto">Industry veterans with decades of combined experience and a shared commitment to client success.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden rounded-2xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop&crop=face" alt="Managing Partner" class="w-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold">{{PARTNER1_NAME}}</h3>
+                    <p class="text-accent">Managing Partner, CPA</p>
+                </div>
+
+                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden rounded-2xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&crop=face" alt="Tax Partner" class="w-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold">{{PARTNER2_NAME}}</h3>
+                    <p class="text-accent">Tax Partner, CPA, JD</p>
+                </div>
+
+                <div class="group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-2xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop&crop=face" alt="Advisory Partner" class="w-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold">{{PARTNER3_NAME}}</h3>
+                    <p class="text-accent">Advisory Partner, CPA, MBA</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="team.html" class="text-accent inline-flex items-center gap-2 hover:gap-3 transition-all font-medium">
+                    View Full Team <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&h=600&fit=crop" alt="Office" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-4xl lg:text-5xl font-heading font-bold mb-6">Ready for a Partner Who Understands Complexity?</h2>
+            <p class="text-xl text-platinum/70 mb-10">Schedule a confidential consultation to discuss how we can support your financial objectives.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html" class="bg-accent text-primary px-10 py-4 rounded font-semibold text-lg hover:bg-white transition">
+                    Schedule Consultation
+                </a>
+                <a href="tel:{{PHONE}}" class="glass text-white px-10 py-4 rounded font-semibold text-lg hover:bg-white/10 transition">
+                    <i class="fas fa-phone mr-2"></i>{{PHONE}}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary border-t border-white/10 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-heading font-bold text-gradient mb-4">{{FIRM_NAME}}</h3>
+                    <p class="text-platinum/70 mb-6">Premium accounting and advisory services for discerning clients.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-accent hover:text-primary transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-accent hover:text-primary transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-3 text-platinum/70">
+                        <li><a href="services.html#tax" class="hover:text-accent transition">Tax Strategy</a></li>
+                        <li><a href="services.html#wealth" class="hover:text-accent transition">Wealth Advisory</a></li>
+                        <li><a href="services.html#advisory" class="hover:text-accent transition">Business Advisory</a></li>
+                        <li><a href="services.html#audit" class="hover:text-accent transition">Audit & Assurance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-3 text-platinum/70">
+                        <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
+                        <li><a href="team.html" class="hover:text-accent transition">Our Team</a></li>
+                        <li><a href="insights.html" class="hover:text-accent transition">Insights</a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-3 text-platinum/70">
+                        <li>{{ADDRESS}}</li>
+                        <li>{{PHONE}}</li>
+                        <li>{{EMAIL}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-platinum/50 text-sm">
+                <p>&copy; {{YEAR}} {{FIRM_NAME}}. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="privacy.html" class="hover:text-accent transition">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-accent transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>

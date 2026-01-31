@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{FIRM_NAME}} | Trusted CPA Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#14532d',
+                        secondary: '#166534',
+                        accent: '#ca8a04',
+                        cream: '#fefce8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-serif antialiased bg-cream">
+    <!-- Navigation -->
+    <nav class="bg-white shadow">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">{{FIRM_NAME}}</div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#services" class="text-gray-700 hover:text-primary">Services</a>
+                <a href="#about" class="text-gray-700 hover:text-primary">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
+            </div>
+            <a href="tel:{{PHONE}}" class="bg-primary text-white px-6 py-2 rounded hover:bg-secondary transition">{{PHONE}}</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-primary text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="text-accent font-semibold mb-4">Serving {{CITY}} Since {{FOUNDED}}</div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Accounting Services Built on Trust</h1>
+                <p class="text-xl text-gray-200 mb-8">For {{YEARS}} years, families and businesses have trusted {{FIRM_NAME}} for reliable, personalized accounting services.</p>
+                <a href="#contact" class="inline-block bg-accent text-white px-8 py-4 rounded font-semibold hover:bg-yellow-600 transition">Request a Consultation</a>
+            </div>
+            <div class="hidden md:block">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&h=400&fit=crop" alt="Professional accounting" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-primary">{{YEARS}}+</div>
+                <div class="text-gray-600">Years Experience</div>
+            </div>
+            <div class="border-l border-gray-200 pl-8">
+                <div class="text-3xl font-bold text-primary">{{CLIENTS}}+</div>
+                <div class="text-gray-600">Satisfied Clients</div>
+            </div>
+            <div class="border-l border-gray-200 pl-8">
+                <div class="text-3xl font-bold text-primary">A+</div>
+                <div class="text-gray-600">BBB Rating</div>
+            </div>
+            <div class="border-l border-gray-200 pl-8">
+                <div class="text-3xl font-bold text-primary">5★</div>
+                <div class="text-gray-600">Google Reviews</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-primary text-center mb-4">Our Services</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-xl mx-auto">Comprehensive accounting solutions for individuals and businesses of all sizes.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-3">Individual Tax Returns</h3>
+                    <p class="text-gray-600 mb-4">Personal tax preparation with attention to maximizing your deductions and credits.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Federal & State Returns</li>
+                        <li>✓ Itemized Deductions</li>
+                        <li>✓ Investment Income</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-3">Business Tax Services</h3>
+                    <p class="text-gray-600 mb-4">Complete business tax solutions from planning to filing.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Corporate Returns</li>
+                        <li>✓ Partnership/LLC</li>
+                        <li>✓ Quarterly Estimates</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-3">Bookkeeping</h3>
+                    <p class="text-gray-600 mb-4">Keep your finances organized and tax-ready year-round.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>✓ Monthly Reconciliation</li>
+                        <li>✓ Financial Statements</li>
+                        <li>✓ Payroll Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=500&h=400&fit=crop" alt="Our office" class="rounded-lg shadow-lg">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-primary mb-6">About {{FIRM_NAME}}</h2>
+                <p class="text-gray-600 mb-4">{{ABOUT_TEXT}}</p>
+                <p class="text-gray-600 mb-6">We believe in old-fashioned service with modern expertise. Every client receives personal attention from a licensed CPA who takes the time to understand your unique situation.</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="{{OWNER_NAME}}" class="w-16 h-16 rounded-full">
+                    <div>
+                        <div class="font-bold text-primary">{{OWNER_NAME}}, CPA</div>
+                        <div class="text-gray-600">Founder & Principal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-8 rounded-lg">
+                    <div class="text-accent text-2xl mb-4">★★★★★</div>
+                    <p class="mb-6 text-gray-200">"{{FIRM_NAME}} has handled my family's taxes for over 10 years. They're thorough, professional, and always available to answer questions."</p>
+                    <div class="font-semibold">— Margaret S., Retired Teacher</div>
+                </div>
+                <div class="bg-white/10 p-8 rounded-lg">
+                    <div class="text-accent text-2xl mb-4">★★★★★</div>
+                    <p class="mb-6 text-gray-200">"When I started my business, they helped me set up everything correctly from day one. Couldn't have done it without them."</p>
+                    <div class="font-semibold">— Robert T., Small Business Owner</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-primary text-center mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-6">Get in Touch</h3>
+                    <div class="space-y-4 text-gray-600">
+                        <p><strong>Address:</strong><br>{{ADDRESS}}</p>
+                        <p><strong>Phone:</strong><br>{{PHONE}}</p>
+                        <p><strong>Email:</strong><br>{{EMAIL}}</p>
+                        <p><strong>Hours:</strong><br>Monday-Friday: 9am-5pm<br>Saturday: By Appointment</p>
+                    </div>
+                </div>
+                <form class="bg-white p-8 rounded-lg shadow">
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border rounded focus:outline-none focus:border-primary">
+                        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border rounded focus:outline-none focus:border-primary">
+                        <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 border rounded focus:outline-none focus:border-primary">
+                        <textarea rows="4" placeholder="How can we help?" class="w-full px-4 py-3 border rounded focus:outline-none focus:border-primary"></textarea>
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded font-semibold hover:bg-secondary transition">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="text-xl font-bold mb-4">{{FIRM_NAME}}</div>
+            <p class="text-gray-300 mb-4">Trusted accounting services since {{FOUNDED}}</p>
+            <p class="text-gray-400">&copy; {{YEAR}} {{FIRM_NAME}}. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

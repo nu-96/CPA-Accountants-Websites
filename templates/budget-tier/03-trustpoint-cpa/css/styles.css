@@ -1,0 +1,63 @@
+/* TrustPoint CPA - Custom Styles
+   ===============================
+   Trust-focused, professional design
+*/
+
+:root {
+    /* Brand Colors */
+    --color-primary: #0f4c81;      /* Navy blue - trust & professionalism */
+    --color-secondary: #5a7fa8;    /* Light blue */
+    --color-accent: #f5a623;       /* Gold - warmth & approachability */
+    
+    /* Typography */
+    --font-heading: 'Georgia', serif;
+    --font-body: system-ui, -apple-system, sans-serif;
+    
+    /* Additional colors */
+    --color-text: #2d3748;
+    --color-text-light: #718096;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body font */
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
+
+/* Selection color */
+::selection {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Service card hover */
+.hover\:shadow-md:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Focus states */
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-primary);
+}
+
+/* Star ratings */
+.text-accent {
+    color: var(--color-accent);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        display: none;
+    }
+}

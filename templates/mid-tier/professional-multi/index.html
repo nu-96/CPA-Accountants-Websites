@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{FIRM_NAME}} | Accounting & Tax Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#2c5282',
+                        accent: '#ed8936',
+                        dark: '#1a202c'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Top Bar -->
+    <div class="bg-dark text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span><i class="fas fa-phone mr-2"></i>{{PHONE}}</span>
+                <span class="hidden sm:inline"><i class="fas fa-envelope mr-2"></i>{{EMAIL}}</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-accent"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-accent"><i class="fab fa-facebook"></i></a>
+                <a href="client-portal.html" class="hover:text-accent">Client Portal</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">{{FIRM_NAME}}</a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-primary font-medium hover:text-accent">Home</a>
+                    <div class="relative group">
+                        <a href="services.html" class="text-gray-600 hover:text-primary flex items-center gap-1">
+                            Services <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="services.html#tax" class="block px-4 py-2 hover:bg-gray-50">Tax Services</a>
+                            <a href="services.html#accounting" class="block px-4 py-2 hover:bg-gray-50">Accounting</a>
+                            <a href="services.html#payroll" class="block px-4 py-2 hover:bg-gray-50">Payroll</a>
+                            <a href="services.html#advisory" class="block px-4 py-2 hover:bg-gray-50">Advisory</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-gray-600 hover:text-primary">About</a>
+                    <a href="team.html" class="text-gray-600 hover:text-primary">Our Team</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-primary">Resources</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                </div>
+                <a href="contact.html" class="bg-accent text-white px-6 py-2 rounded hover:bg-orange-600 transition">Free Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="gradient-bg text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-20 w-64 h-64 bg-white rounded-full"></div>
+            <div class="absolute bottom-10 right-20 w-96 h-96 bg-white rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-accent font-semibold mb-4 uppercase tracking-wider">Trusted CPA Firm Since {{FOUNDED}}</p>
+                    <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-6">Expert Financial Solutions for Growing Businesses</h1>
+                    <p class="text-xl text-gray-200 mb-8">From tax planning to business advisory, we provide comprehensive accounting services that help you make smarter financial decisions.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="contact.html" class="bg-accent text-white px-8 py-4 rounded font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2">
+                            Schedule Consultation <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="services.html" class="border-2 border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-primary transition">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=500&fit=crop" alt="Professional accountants" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-award text-3xl text-accent"></i>
+                    <div>
+                        <div class="font-bold text-primary">Licensed CPAs</div>
+                        <div class="text-sm text-gray-500">State Board Certified</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-users text-3xl text-accent"></i>
+                    <div>
+                        <div class="font-bold text-primary">{{CLIENTS}}+ Clients</div>
+                        <div class="text-sm text-gray-500">Businesses & Individuals</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-clock text-3xl text-accent"></i>
+                    <div>
+                        <div class="font-bold text-primary">{{YEARS}} Years</div>
+                        <div class="text-sm text-gray-500">Industry Experience</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-star text-3xl text-accent"></i>
+                    <div>
+                        <div class="font-bold text-primary">5-Star Rated</div>
+                        <div class="text-sm text-gray-500">On Google & Yelp</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-accent font-semibold mb-2 uppercase tracking-wider">Our Services</p>
+                <h2 class="text-4xl font-bold text-primary mb-4">Comprehensive Financial Solutions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer a full range of accounting and advisory services designed to meet your unique needs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent/10 transition">
+                        <i class="fas fa-file-invoice-dollar text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Tax Services</h3>
+                    <p class="text-gray-600 mb-4">Individual and business tax preparation, planning, and IRS representation.</p>
+                    <a href="services.html#tax" class="text-accent font-semibold hover:underline">Learn More →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent/10 transition">
+                        <i class="fas fa-calculator text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Accounting</h3>
+                    <p class="text-gray-600 mb-4">Full-service bookkeeping, financial statements, and accounting system setup.</p>
+                    <a href="services.html#accounting" class="text-accent font-semibold hover:underline">Learn More →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent/10 transition">
+                        <i class="fas fa-money-check-alt text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Payroll</h3>
+                    <p class="text-gray-600 mb-4">Complete payroll processing, tax deposits, and compliance management.</p>
+                    <a href="services.html#payroll" class="text-accent font-semibold hover:underline">Learn More →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent/10 transition">
+                        <i class="fas fa-chart-line text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Advisory</h3>
+                    <p class="text-gray-600 mb-4">Strategic planning, cash flow management, and business growth consulting.</p>
+                    <a href="services.html#advisory" class="text-accent font-semibold hover:underline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-accent font-semibold mb-2 uppercase tracking-wider">Why Choose Us</p>
+                    <h2 class="text-4xl font-bold text-primary mb-6">A Partner You Can Trust</h2>
+                    <p class="text-gray-600 mb-8">{{ABOUT_TEXT}}</p>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-shield-alt text-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-1">Proven Expertise</h4>
+                                <p class="text-gray-600">Our team holds advanced certifications and stays current with evolving tax laws.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-headset text-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-1">Responsive Service</h4>
+                                <p class="text-gray-600">We're always available when you need us, with quick response times guaranteed.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-hand-holding-usd text-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-1">Value-Driven</h4>
+                                <p class="text-gray-600">Transparent pricing with no surprises. We maximize value for every client.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=700&fit=crop" alt="Team meeting" class="rounded-xl shadow-lg">
+                    <div class="absolute -bottom-8 -left-8 bg-accent text-white p-6 rounded-xl shadow-lg">
+                        <div class="text-4xl font-bold">{{YEARS}}+</div>
+                        <div>Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-accent font-semibold mb-2 uppercase tracking-wider">Testimonials</p>
+                <h2 class="text-4xl font-bold text-primary">What Our Clients Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"{{FIRM_NAME}} has been instrumental in helping our business grow. Their tax strategies saved us thousands."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">JD</div>
+                        <div>
+                            <div class="font-semibold text-primary">John Davidson</div>
+                            <div class="text-sm text-gray-500">Business Owner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Professional, responsive, and thorough. They make tax season stress-free every year."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold">SM</div>
+                        <div>
+                            <div class="font-semibold text-primary">Sarah Mitchell</div>
+                            <div class="text-sm text-gray-500">Healthcare Professional</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Outstanding advisory services. They helped us restructure and prepare for expansion."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold">RL</div>
+                        <div>
+                            <div class="font-semibold text-primary">Robert Lee</div>
+                            <div class="text-sm text-gray-500">Restaurant Group CEO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+            <h2 class="text-4xl font-bold mb-6">Ready to Take Control of Your Finances?</h2>
+            <p class="text-xl text-gray-200 mb-8">Schedule a free consultation with our team and discover how we can help you achieve your financial goals.</p>
+            <a href="contact.html" class="inline-block bg-accent text-white px-10 py-4 rounded font-semibold text-lg hover:bg-orange-600 transition">
+                Get Your Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">{{FIRM_NAME}}</h3>
+                    <p class="text-gray-400 mb-6">Professional accounting services built on trust, expertise, and dedication to your success.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-accent transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html#tax" class="hover:text-white">Tax Planning</a></li>
+                        <li><a href="services.html#accounting" class="hover:text-white">Bookkeeping</a></li>
+                        <li><a href="services.html#payroll" class="hover:text-white">Payroll Services</a></li>
+                        <li><a href="services.html#advisory" class="hover:text-white">Business Advisory</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="team.html" class="hover:text-white">Our Team</a></li>
+                        <li><a href="blog.html" class="hover:text-white">Resources</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>{{ADDRESS}}</li>
+                        <li><i class="fas fa-phone mr-2"></i>{{PHONE}}</li>
+                        <li><i class="fas fa-envelope mr-2"></i>{{EMAIL}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; {{YEAR}} {{FIRM_NAME}}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
