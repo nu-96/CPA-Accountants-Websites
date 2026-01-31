@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Heritage Advisors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { primary: 'var(--color-primary)', accent: 'var(--color-accent)' }, fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Source Sans Pro', 'sans-serif'] } } }
+        }
+    </script>
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- Nav -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
+            <a href="index.html" class="font-serif text-2xl font-bold text-primary">Heritage<span class="text-accent">.</span></a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="text-primary">Services</a>
+                <a href="approach.html">Our Approach</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="font-serif text-4xl font-bold mb-4">Our Services</h1>
+            <p class="text-stone-200 max-w-2xl mx-auto">Comprehensive wealth management for families of distinction</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Estate Planning -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b border-stone-200">
+                <div>
+                    <p class="text-accent font-medium uppercase tracking-widest text-sm mb-2">Preserve Your Legacy</p>
+                    <h2 class="font-serif text-3xl font-bold text-primary mb-4">Estate & Succession Planning</h2>
+                    <p class="text-stone-600 mb-6">Comprehensive estate planning to ensure your wealth transfers according to your wishes while minimizing tax impact.</p>
+                    <ul class="space-y-3 text-stone-600">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Estate tax minimization strategies</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Business succession planning</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Charitable giving strategies</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Generation-skipping transfer planning</li>
+                    </ul>
+                </div>
+                <div class="bg-stone-200 rounded-2xl h-80 flex items-center justify-center">
+                    <span class="text-stone-500">Service Image</span>
+                </div>
+            </div>
+
+            <!-- Tax Planning -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b border-stone-200">
+                <div class="order-2 md:order-1 bg-stone-200 rounded-2xl h-80 flex items-center justify-center">
+                    <span class="text-stone-500">Service Image</span>
+                </div>
+                <div class="order-1 md:order-2">
+                    <p class="text-accent font-medium uppercase tracking-widest text-sm mb-2">Strategic Tax Management</p>
+                    <h2 class="font-serif text-3xl font-bold text-primary mb-4">Tax Planning & Preparation</h2>
+                    <p class="text-stone-600 mb-6">Year-round tax strategy that goes beyond compliance to actively preserve and grow your wealth.</p>
+                    <ul class="space-y-3 text-stone-600">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Multi-year tax projections</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Investment tax optimization</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Retirement distribution planning</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>State tax residency planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Trust Services -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b border-stone-200">
+                <div>
+                    <p class="text-accent font-medium uppercase tracking-widest text-sm mb-2">Professional Administration</p>
+                    <h2 class="font-serif text-3xl font-bold text-primary mb-4">Trust & Fiduciary Services</h2>
+                    <p class="text-stone-600 mb-6">Professional trust administration and fiduciary services with the personal touch your family deserves.</p>
+                    <ul class="space-y-3 text-stone-600">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Trust accounting and reporting</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Trustee services</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Estate settlement</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Beneficiary services</li>
+                    </ul>
+                </div>
+                <div class="bg-stone-200 rounded-2xl h-80 flex items-center justify-center">
+                    <span class="text-stone-500">Service Image</span>
+                </div>
+            </div>
+
+            <!-- Family Advisory -->
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 bg-stone-200 rounded-2xl h-80 flex items-center justify-center">
+                    <span class="text-stone-500">Service Image</span>
+                </div>
+                <div class="order-1 md:order-2">
+                    <p class="text-accent font-medium uppercase tracking-widest text-sm mb-2">Family Harmony</p>
+                    <h2 class="font-serif text-3xl font-bold text-primary mb-4">Family Wealth Advisory</h2>
+                    <p class="text-stone-600 mb-6">Navigate the complexities of family wealth with experienced guidance that considers both financial and relational dynamics.</p>
+                    <ul class="space-y-3 text-stone-600">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Family governance structures</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Next-generation education</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Family meeting facilitation</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-accent rounded-full"></span>Philanthropic planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-3xl font-bold mb-4">Begin Your Journey</h2>
+            <p class="text-stone-200 mb-8">Schedule a private consultation to discuss your family's unique needs.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded font-semibold hover:bg-stone-100 transition">Schedule Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-stone-500 text-sm">
+            &copy; 2024 Heritage Advisors. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

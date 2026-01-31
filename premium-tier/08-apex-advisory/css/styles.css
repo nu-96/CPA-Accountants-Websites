@@ -1,0 +1,90 @@
+/* Apex Advisory Group - Premium Template Styles */
+
+:root {
+    --color-primary: #0d47a1;      /* Deep blue */
+    --color-secondary: #1976d2;    /* Medium blue */
+    --color-accent: #ffc107;       /* Gold */
+    --color-dark: #0a1628;         /* Navy black */
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Custom animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient text */
+.text-gradient {
+    background: linear-gradient(135deg, var(--color-accent), #ffd54f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glass effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Service card hover */
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+
+/* Navigation dropdown */
+.group:hover .group-hover\:visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Form focus states */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.1);
+}
+
+/* Button hover states */
+.hover\:bg-opacity-90:hover {
+    --tw-bg-opacity: 0.9;
+}
+
+/* Video play button pulse */
+@keyframes pulse-ring {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Smooth scroll for anchor links */
+a[href^="#"] {
+    scroll-behavior: smooth;
+}
+
+/* Mobile menu transitions */
+@media (max-width: 1024px) {
+    .mobile-menu {
+        transition: transform 0.3s ease-in-out;
+    }
+}

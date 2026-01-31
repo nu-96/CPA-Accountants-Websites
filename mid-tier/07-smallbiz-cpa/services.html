@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | SmallBiz CPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: 'var(--color-primary)', accent: 'var(--color-accent)' } } } }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Nav -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold">SB</div>
+                <span class="text-xl font-bold">SmallBiz<span class="text-primary">CPA</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="text-primary">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Our Services</h1>
+            <p class="text-blue-100 max-w-2xl mx-auto">Everything your small business needs in one place</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Bookkeeping -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b">
+                <div>
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">Monthly Bookkeeping</div>
+                    <h2 class="text-3xl font-bold mb-4">Clean Books, Every Month</h2>
+                    <p class="text-gray-600 mb-6">We handle all the tedious work so you always have accurate, up-to-date financial records.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Transaction categorization</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Bank & credit card reconciliation</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Monthly P&L and balance sheet</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Accounts payable/receivable</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> QuickBooks or Xero setup</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 rounded-2xl h-80 flex items-center justify-center">
+                    <span class="text-gray-500">Bookkeeping Illustration</span>
+                </div>
+            </div>
+
+            <!-- Tax -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20 pb-20 border-b">
+                <div class="order-2 md:order-1 bg-gray-100 rounded-2xl h-80 flex items-center justify-center">
+                    <span class="text-gray-500">Tax Illustration</span>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">Tax Preparation</div>
+                    <h2 class="text-3xl font-bold mb-4">Stress-Free Tax Season</h2>
+                    <p class="text-gray-600 mb-6">We prepare your business taxes and help you plan throughout the year to minimize what you owe.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Business tax return preparation</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Quarterly estimated taxes</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Year-end tax planning call</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Deduction maximization</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> State tax filings included</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Payroll -->
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">Payroll Services</div>
+                    <h2 class="text-3xl font-bold mb-4">Payroll Made Easy</h2>
+                    <p class="text-gray-600 mb-6">Reliable payroll processing with all the compliance headaches handled for you.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Weekly, bi-weekly, or monthly payroll</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Direct deposit setup</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Payroll tax deposits & filings</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> Year-end W-2s & 1099s</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span> New hire onboarding</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 rounded-2xl h-80 flex items-center justify-center">
+                    <span class="text-gray-500">Payroll Illustration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-blue-100 mb-8">Get a free quote customized to your business needs.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Get Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
+            &copy; 2024 SmallBiz CPA. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Meridian Wealth - Luxury Private Client Theme */
+
+:root {
+    --color-primary: #1a2e3b;      /* Deep blue-gray */
+    --color-secondary: #3d5a6c;    /* Muted blue */
+    --color-accent: #b8926a;       /* Warm gold/bronze */
+    --color-cream: #f8f7f4;        /* Warm off-white */
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+::selection {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+/* Luxury feel */
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Subtle animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Card hover effects */
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Form focus states */
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(26, 46, 59, 0.1);
+}
+
+/* Image overlays */
+.group:hover .group-hover\:opacity-90 {
+    opacity: 0.9;
+}
+
+/* Smooth transitions */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Custom scrollbar - subtle */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    border-radius: 3px;
+}
+
+/* Article card hover */
+article:hover {
+    transform: translateY(-5px);
+}
+
+/* Letter spacing for elegance */
+.tracking-\[0\.3em\] {
+    letter-spacing: 0.3em;
+}
+
+.tracking-\[0\.2em\] {
+    letter-spacing: 0.2em;
+}

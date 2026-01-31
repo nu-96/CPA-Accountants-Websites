@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustPoint CPA | Reliable Tax & Accounting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--color-primary)',
+                        secondary: 'var(--color-secondary)',
+                        accent: 'var(--color-accent)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                    <span class="text-primary font-bold text-sm">TP</span>
+                </div>
+                <span class="font-bold text-lg">TrustPoint CPA</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#services" class="hover:text-accent">Services</a>
+                <a href="#about" class="hover:text-accent">About</a>
+                <a href="#testimonials" class="hover:text-accent">Reviews</a>
+                <a href="#contact" class="bg-accent text-primary px-4 py-2 rounded font-medium hover:bg-opacity-90">(555) 987-6543</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white pb-20 pt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm mb-6">
+                        <span class="w-2 h-2 bg-accent rounded-full"></span>
+                        Serving Clients Since 1998
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Tax & Accounting Services You Can Trust
+                    </h1>
+                    <p class="text-lg text-white text-opacity-90 mb-8">
+                        From individual tax returns to full business accounting, we provide reliable, professional services that keep your finances on track.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-accent text-primary px-6 py-3 rounded font-semibold hover:bg-opacity-90 transition">Free Consultation</a>
+                        <a href="tel:5559876543" class="border border-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-primary transition">Call Now</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="bg-white bg-opacity-10 rounded-lg p-8">
+                        <div class="text-center">
+                            <div class="text-6xl font-bold text-accent">25+</div>
+                            <div class="text-lg mt-2">Years of Experience</div>
+                            <div class="h-px bg-white bg-opacity-20 my-6"></div>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <div class="text-2xl font-bold">1,000+</div>
+                                    <div class="text-white text-opacity-70">Returns Filed</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold">98%</div>
+                                    <div class="text-white text-opacity-70">Client Retention</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-gray-500">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L13.09 8.26L20 9L14.5 13.5L16.18 20L12 16.5L7.82 20L9.5 13.5L4 9L10.91 8.26L12 2Z"/></svg>
+                    <span class="font-medium">5-Star Rated</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="font-bold text-primary">CPA</span>
+                    <span>Certified</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="font-bold text-primary">AICPA</span>
+                    <span>Member</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"/></svg>
+                    <span>Insured & Bonded</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">How We Can Help</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive accounting services for every stage of your financial journey</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Individual Tax Returns</h3>
+                    <p class="text-gray-600 text-sm mb-4">Personal tax preparation with maximum deduction strategies</p>
+                    <a href="#contact" class="text-primary font-medium text-sm hover:text-accent">Learn More →</a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Business Tax Services</h3>
+                    <p class="text-gray-600 text-sm mb-4">S-Corp, LLC, Partnership, and Corporate tax preparation</p>
+                    <a href="#contact" class="text-primary font-medium text-sm hover:text-accent">Learn More →</a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Bookkeeping</h3>
+                    <p class="text-gray-600 text-sm mb-4">Monthly bookkeeping and financial statement preparation</p>
+                    <a href="#contact" class="text-primary font-medium text-sm hover:text-accent">Learn More →</a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Payroll Services</h3>
+                    <p class="text-gray-600 text-sm mb-4">Complete payroll processing and tax deposit management</p>
+                    <a href="#contact" class="text-primary font-medium text-sm hover:text-accent">Learn More →</a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">IRS Representation</h3>
+                    <p class="text-gray-600 text-sm mb-4">Expert representation for audits, notices, and disputes</p>
+                    <a href="#contact" class="text-primary font-medium text-sm hover:text-accent">Learn More →</a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Tax Planning</h3>
+                    <p class="text-gray-600 text-sm mb-4">Year-round strategies to minimize your tax burden</p>
+                    <a href="#contact" class="text-primary font-medium text-sm hover:text-accent">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-100 rounded-lg h-80 flex items-center justify-center">
+                    <span class="text-gray-500">Professional Photo</span>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Meet Your CPA</h2>
+                    <p class="text-gray-600 mb-4">
+                        Hi, I'm John Smith, CPA. For over 25 years, I've helped individuals and businesses navigate the complex world of taxes and accounting with confidence.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        My approach is simple: provide honest, reliable service that puts your financial well-being first. I believe in building long-term relationships based on trust and results.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="font-bold text-primary">Education</div>
+                            <div class="text-sm text-gray-600">MBA, Accounting<br>State University</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="font-bold text-primary">Certifications</div>
+                            <div class="text-sm text-gray-600">CPA, EA<br>AICPA Member</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Client Reviews</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex text-accent text-lg mb-3">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"John has done our taxes for 10 years. Always professional, always thorough. Wouldn't go anywhere else."</p>
+                    <div class="text-sm font-medium">— Robert T.</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex text-accent text-lg mb-3">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"Saved me thousands on my business taxes. The advice on entity structure alone paid for years of service."</p>
+                    <div class="text-sm font-medium">— Lisa M.</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex text-accent text-lg mb-3">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"When I got an IRS notice, TrustPoint handled everything. Professional and reassuring throughout."</p>
+                    <div class="text-sm font-medium">— David K.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Schedule Your Free Consultation</h2>
+                <p class="text-gray-600">Let's discuss how we can help with your tax and accounting needs</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-3xl mb-2">📞</div>
+                    <div class="font-bold">Call Us</div>
+                    <div class="text-gray-600">(555) 987-6543</div>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-3xl mb-2">📧</div>
+                    <div class="font-bold">Email Us</div>
+                    <div class="text-gray-600">info@trustpointcpa.com</div>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-3xl mb-2">📍</div>
+                    <div class="font-bold">Visit Us</div>
+                    <div class="text-gray-600">789 Oak Ave, Dallas, TX</div>
+                </div>
+            </div>
+            <form class="bg-gray-50 p-8 rounded-lg">
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" placeholder="Full Name" class="px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none">
+                    <input type="email" placeholder="Email Address" class="px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none">
+                </div>
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <input type="tel" placeholder="Phone Number" class="px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none">
+                    <select class="px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none">
+                        <option>Service Needed</option>
+                        <option>Individual Tax Return</option>
+                        <option>Business Tax Return</option>
+                        <option>Bookkeeping</option>
+                        <option>Payroll Services</option>
+                        <option>Tax Planning</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <textarea placeholder="How can we help you?" rows="4" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none mb-4"></textarea>
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Request Free Consultation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                        <span class="text-primary font-bold text-sm">TP</span>
+                    </div>
+                    <span class="font-bold">TrustPoint CPA</span>
+                </div>
+                <div class="text-sm text-white text-opacity-70">
+                    &copy; 2024 TrustPoint CPA. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

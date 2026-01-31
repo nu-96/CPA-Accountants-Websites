@@ -1,0 +1,19 @@
+/* Heritage Advisors - Elegant Family Wealth Theme */
+
+:root {
+    --color-primary: #2c4a3e;      /* Forest green */
+    --color-secondary: #5b7065;
+    --color-accent: #c9a962;       /* Gold */
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Source Sans Pro', sans-serif; }
+::selection { background-color: var(--color-primary); color: white; }
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.font-serif { font-family: 'Playfair Display', serif; }

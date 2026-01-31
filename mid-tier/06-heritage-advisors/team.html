@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Heritage Advisors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { primary: 'var(--color-primary)', accent: 'var(--color-accent)' }, fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Source Sans Pro', 'sans-serif'] } } }
+        }
+    </script>
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- Nav -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
+            <a href="index.html" class="font-serif text-2xl font-bold text-primary">Heritage<span class="text-accent">.</span></a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="approach.html">Our Approach</a>
+                <a href="team.html" class="text-primary">Team</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="font-serif text-4xl font-bold mb-4">Our Team</h1>
+            <p class="text-stone-200 max-w-2xl mx-auto">A legacy of expertise passed down through three generations</p>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Leadership -->
+            <div class="mb-16">
+                <h2 class="font-serif text-2xl font-bold text-primary mb-8 text-center">Leadership</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                        <div class="w-40 h-40 bg-stone-200 rounded-full mx-auto mb-6"></div>
+                        <h3 class="font-serif text-xl font-bold text-primary">William Heritage III, CPA</h3>
+                        <p class="text-accent mb-2">Managing Partner</p>
+                        <p class="text-stone-600 text-sm">Third generation of the Heritage family. 25+ years advising affluent families.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                        <div class="w-40 h-40 bg-stone-200 rounded-full mx-auto mb-6"></div>
+                        <h3 class="font-serif text-xl font-bold text-primary">Margaret Chen, JD, CPA</h3>
+                        <p class="text-accent mb-2">Partner, Estate Planning</p>
+                        <p class="text-stone-600 text-sm">Former estate attorney. Expert in complex trust and estate matters.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                        <div class="w-40 h-40 bg-stone-200 rounded-full mx-auto mb-6"></div>
+                        <h3 class="font-serif text-xl font-bold text-primary">Robert Thompson, CPA</h3>
+                        <p class="text-accent mb-2">Partner, Tax Strategy</p>
+                        <p class="text-stone-600 text-sm">30 years of tax planning experience. Former Big 4 tax director.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Senior Advisors -->
+            <div>
+                <h2 class="font-serif text-2xl font-bold text-primary mb-8 text-center">Senior Advisors</h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <div class="w-24 h-24 bg-stone-200 rounded-full mx-auto mb-4"></div>
+                        <h3 class="font-bold text-primary">Sarah Williams, CPA</h3>
+                        <p class="text-stone-600 text-sm">Senior Tax Manager</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <div class="w-24 h-24 bg-stone-200 rounded-full mx-auto mb-4"></div>
+                        <h3 class="font-bold text-primary">Michael Okonjo, CFP®</h3>
+                        <p class="text-stone-600 text-sm">Wealth Advisor</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <div class="w-24 h-24 bg-stone-200 rounded-full mx-auto mb-4"></div>
+                        <h3 class="font-bold text-primary">Jennifer Park, CPA</h3>
+                        <p class="text-stone-600 text-sm">Trust Specialist</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <div class="w-24 h-24 bg-stone-200 rounded-full mx-auto mb-4"></div>
+                        <h3 class="font-bold text-primary">David Martinez, EA</h3>
+                        <p class="text-stone-600 text-sm">Tax Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-3xl font-bold mb-4">Meet Your Future Advisors</h2>
+            <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded font-semibold hover:bg-stone-100 transition inline-block mt-4">Schedule Introduction</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-stone-500 text-sm">
+            &copy; 2024 Heritage Advisors. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

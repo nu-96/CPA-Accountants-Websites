@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | SmallBiz CPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: 'var(--color-primary)', accent: 'var(--color-accent)' } } } }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Nav -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold">SB</div>
+                <span class="text-xl font-bold">SmallBiz<span class="text-primary">CPA</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html" class="text-primary">Pricing</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Simple, Transparent Pricing</h1>
+            <p class="text-blue-100 max-w-2xl mx-auto">Fixed monthly rates. No hourly billing. No surprises.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="py-20">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter -->
+                <div class="border-2 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-600 text-sm mb-4">Perfect for solopreneurs and freelancers</p>
+                    <div class="text-5xl font-bold text-primary mb-2">$299<span class="text-lg text-gray-500">/mo</span></div>
+                    <p class="text-sm text-gray-500 mb-6">Up to 50 transactions/month</p>
+                    <ul class="space-y-3 text-sm mb-8">
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Monthly bookkeeping</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Bank reconciliation</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Monthly P&L report</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Dedicated bookkeeper</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span>-</span> Business tax return</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span>-</span> Payroll</li>
+                    </ul>
+                    <a href="contact.html" class="block text-center border-2 border-primary text-primary py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition">Get Started</a>
+                </div>
+
+                <!-- Growth -->
+                <div class="border-2 border-primary rounded-2xl p-8 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</div>
+                    <h3 class="text-xl font-bold mb-2">Growth</h3>
+                    <p class="text-gray-600 text-sm mb-4">For growing small businesses</p>
+                    <div class="text-5xl font-bold text-primary mb-2">$499<span class="text-lg text-gray-500">/mo</span></div>
+                    <p class="text-sm text-gray-500 mb-6">Up to 150 transactions/month</p>
+                    <ul class="space-y-3 text-sm mb-8">
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Everything in Starter</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Cash flow statement</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Quarterly tax estimates</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Year-end planning call</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Business tax return*</li>
+                        <li class="flex items-center gap-2 text-gray-400"><span>-</span> Payroll</li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-primary text-white py-3 rounded-lg font-medium hover:bg-opacity-90 transition">Get Started</a>
+                </div>
+
+                <!-- Scale -->
+                <div class="border-2 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-2">Scale</h3>
+                    <p class="text-gray-600 text-sm mb-4">For established businesses with employees</p>
+                    <div class="text-5xl font-bold text-primary mb-2">$799<span class="text-lg text-gray-500">/mo</span></div>
+                    <p class="text-sm text-gray-500 mb-6">150+ transactions/month</p>
+                    <ul class="space-y-3 text-sm mb-8">
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Everything in Growth</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Unlimited transactions</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Monthly strategy calls</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Priority support</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Business tax return*</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Payroll (up to 5)</li>
+                    </ul>
+                    <a href="contact.html" class="block text-center border-2 border-primary text-primary py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition">Get Started</a>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-8">* Tax return add-on: $500-$1,500 depending on complexity</p>
+        </div>
+    </section>
+
+    <!-- Add-ons -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">Available Add-Ons</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl border flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">Payroll Processing</h3>
+                        <p class="text-gray-600 text-sm">Per employee per month</p>
+                    </div>
+                    <div class="text-xl font-bold text-primary">+$10</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">1099 Contractor Filings</h3>
+                        <p class="text-gray-600 text-sm">Per contractor per year</p>
+                    </div>
+                    <div class="text-xl font-bold text-primary">+$15</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">Catch-Up Bookkeeping</h3>
+                        <p class="text-gray-600 text-sm">Per month of backlog</p>
+                    </div>
+                    <div class="text-xl font-bold text-primary">+$150</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">Personal Tax Return</h3>
+                        <p class="text-gray-600 text-sm">For business owner</p>
+                    </div>
+                    <div class="text-xl font-bold text-primary">+$300</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div class="border-b pb-4">
+                    <h3 class="font-bold mb-2">What counts as a transaction?</h3>
+                    <p class="text-gray-600 text-sm">A transaction is any entry on your bank or credit card statement—deposits, withdrawals, payments, transfers, etc.</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="font-bold mb-2">Can I switch plans later?</h3>
+                    <p class="text-gray-600 text-sm">Yes! You can upgrade or downgrade your plan at any time. Changes take effect the following month.</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="font-bold mb-2">Is there a contract?</h3>
+                    <p class="text-gray-600 text-sm">Nope! All plans are month-to-month. You can cancel anytime with 30 days notice.</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h3 class="font-bold mb-2">What software do you use?</h3>
+                    <p class="text-gray-600 text-sm">We work with QuickBooks Online and Xero. If you don't have accounting software yet, we'll help you set it up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Not Sure Which Plan?</h2>
+            <p class="text-blue-100 mb-8">We'll analyze your needs and recommend the right fit. No pressure.</p>
+            <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Get Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
+            &copy; 2024 SmallBiz CPA. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

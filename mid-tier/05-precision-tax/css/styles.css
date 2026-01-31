@@ -1,0 +1,20 @@
+/* Precision Tax & Accounting - Custom Styles */
+
+:root {
+    --color-primary: #0d4f8b;
+    --color-secondary: #4a90c2;
+    --color-accent: #22c55e;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: system-ui, -apple-system, sans-serif; }
+::selection { background-color: var(--color-primary); color: white; }
+
+.group:hover .group-hover\:bg-primary { background-color: var(--color-primary); }
+.group:hover .group-hover\:text-white { color: white; }
+.group:hover .group-hover\:text-primary { color: var(--color-primary); }
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(13, 79, 139, 0.1);
+}

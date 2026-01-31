@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meridian Wealth | Private Client Tax & Wealth Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--color-primary)',
+                        secondary: 'var(--color-secondary)',
+                        accent: 'var(--color-accent)',
+                        cream: 'var(--color-cream)',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-cream text-gray-900 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-serif text-3xl font-semibold tracking-tight text-primary">
+                    Meridian
+                </a>
+                <div class="hidden lg:flex items-center gap-10 text-sm font-medium tracking-wide">
+                    <a href="#philosophy" class="hover:text-primary transition">Philosophy</a>
+                    <a href="#services" class="hover:text-primary transition">Services</a>
+                    <a href="#approach" class="hover:text-primary transition">Approach</a>
+                    <a href="#insights" class="hover:text-primary transition">Insights</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+                </div>
+                <a href="#contact" class="hidden lg:block border border-primary text-primary px-6 py-2 text-sm tracking-wide hover:bg-primary hover:text-white transition">
+                    Private Consultation
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center relative overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-cream z-0"></div>
+        <div class="absolute right-0 top-0 w-1/2 h-full bg-gray-100 hidden lg:block"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 py-20 z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <p class="text-accent uppercase tracking-[0.3em] text-sm mb-6 font-medium">Private Client Services</p>
+                    <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-primary leading-tight mb-8">
+                        The Art of<br>Wealth Preservation
+                    </h1>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
+                        For discerning families who seek more than transactional tax preparation—a true partnership in protecting and growing your legacy.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary text-white px-8 py-4 tracking-wide text-sm font-medium hover:bg-opacity-90 transition text-center">
+                            Begin the Conversation
+                        </a>
+                        <a href="#philosophy" class="border border-gray-300 text-gray-700 px-8 py-4 tracking-wide text-sm font-medium hover:border-primary hover:text-primary transition text-center">
+                            Our Philosophy
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="bg-gray-200 rounded-[2rem] h-[600px] ml-12 flex items-center justify-center">
+                        <span class="text-gray-500">Lifestyle Image</span>
+                    </div>
+                    <!-- Floating card -->
+                    <div class="absolute -left-8 bottom-12 bg-white p-8 rounded-xl shadow-xl max-w-xs" data-aos="fade-up" data-aos-delay="500">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-serif font-semibold text-primary">45+</div>
+                                <div class="text-sm text-gray-500">Years of Excellence</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">Serving distinguished families since 1978</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <p class="text-accent uppercase tracking-[0.3em] text-sm mb-4 font-medium">Our Philosophy</p>
+                <h2 class="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 leading-tight">
+                    Wealth is More Than Numbers
+                </h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-12">
+                    True wealth management honors your family's history, values, and aspirations. At Meridian, we take a holistic view—integrating tax strategy, estate planning, and investment oversight into a cohesive approach designed around your unique circumstances.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12 mt-16" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-cream rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-primary mb-4">Discretion</h3>
+                    <p class="text-gray-600">Your privacy is paramount. We operate with the utmost confidentiality in all matters.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-cream rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-primary mb-4">Continuity</h3>
+                    <p class="text-gray-600">We think in generations, building relationships that endure and evolve with your family.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-cream rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-primary mb-4">Excellence</h3>
+                    <p class="text-gray-600">We hold ourselves to the highest standards of technical expertise and personal service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-accent uppercase tracking-[0.3em] text-sm mb-4 font-medium">Private Client Services</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-8 leading-tight">
+                        Comprehensive Wealth Solutions
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        Our services are designed for families with complex financial situations who require sophisticated, personalized guidance.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-accent text-lg">01</span>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold mb-2">Tax Strategy & Preparation</h3>
+                                <p class="text-gray-300">Sophisticated tax planning across multiple entities, jurisdictions, and generations.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-accent text-lg">02</span>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold mb-2">Estate & Trust Planning</h3>
+                                <p class="text-gray-300">Preserve and transfer wealth efficiently while honoring your intentions.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-accent text-lg">03</span>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold mb-2">Investment Tax Optimization</h3>
+                                <p class="text-gray-300">Coordinate with your investment advisors to maximize after-tax returns.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-accent text-lg">04</span>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl font-semibold mb-2">Family Office Support</h3>
+                                <p class="text-gray-300">Complete financial coordination and administration services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-white/10 rounded-3xl p-12">
+                        <p class="text-accent uppercase tracking-[0.2em] text-xs mb-4 font-medium">By the Numbers</p>
+                        <div class="space-y-8">
+                            <div>
+                                <div class="font-serif text-6xl font-semibold text-white">$3B+</div>
+                                <p class="text-gray-300 mt-2">Wealth under advisement</p>
+                            </div>
+                            <div class="h-px bg-white/20"></div>
+                            <div>
+                                <div class="font-serif text-6xl font-semibold text-white">150</div>
+                                <p class="text-gray-300 mt-2">Distinguished families served</p>
+                            </div>
+                            <div class="h-px bg-white/20"></div>
+                            <div>
+                                <div class="font-serif text-6xl font-semibold text-white">3</div>
+                                <p class="text-gray-300 mt-2">Average generations per family</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="approach" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
+                <p class="text-accent uppercase tracking-[0.3em] text-sm mb-4 font-medium">Our Approach</p>
+                <h2 class="font-serif text-4xl md:text-5xl font-semibold text-primary mb-8 leading-tight">
+                    A Partnership, Not a Transaction
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8" data-aos="fade-up">
+                <div class="bg-white p-8 rounded-2xl text-center hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-serif text-2xl">1</div>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Discovery</h3>
+                    <p class="text-gray-600 text-sm">Deep understanding of your family's complete financial picture and goals.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl text-center hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-serif text-2xl">2</div>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Strategy</h3>
+                    <p class="text-gray-600 text-sm">Develop customized, integrated plans across tax, estate, and investment.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl text-center hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-serif text-2xl">3</div>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Implementation</h3>
+                    <p class="text-gray-600 text-sm">Execute with precision, coordinating with your other trusted advisors.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl text-center hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-serif text-2xl">4</div>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Stewardship</h3>
+                    <p class="text-gray-600 text-sm">Ongoing guidance as life evolves—we're here for the journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+            <div class="text-6xl text-accent mb-8">"</div>
+            <blockquote class="font-serif text-2xl md:text-3xl text-primary leading-relaxed mb-8 italic">
+                Meridian has been our family's trusted partner for three decades. Their guidance through two business exits, several generations of estate planning, and countless life transitions has been invaluable. They are, quite simply, exceptional.
+            </blockquote>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-16 h-16 bg-gray-200 rounded-full"></div>
+                <div class="text-left">
+                    <div class="font-semibold text-primary">The Hartwell Family</div>
+                    <div class="text-gray-500 text-sm">Clients since 1992</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights -->
+    <section id="insights" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <p class="text-accent uppercase tracking-[0.3em] text-sm mb-4 font-medium">Insights</p>
+                    <h2 class="font-serif text-4xl font-semibold text-primary">Perspectives on Wealth</h2>
+                </div>
+                <a href="#" class="text-primary font-medium hover:text-accent transition mt-4 md:mt-0">View All Insights →</a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8" data-aos="fade-up">
+                <article class="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition group">
+                    <div class="h-48 bg-gray-200 group-hover:opacity-90 transition"></div>
+                    <div class="p-8">
+                        <p class="text-accent text-sm mb-2">Estate Planning</p>
+                        <h3 class="font-serif text-xl font-semibold text-primary mb-3">Preparing the Next Generation for Wealth Responsibility</h3>
+                        <a href="#" class="text-primary text-sm font-medium hover:text-accent">Read More →</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition group">
+                    <div class="h-48 bg-gray-200 group-hover:opacity-90 transition"></div>
+                    <div class="p-8">
+                        <p class="text-accent text-sm mb-2">Tax Strategy</p>
+                        <h3 class="font-serif text-xl font-semibold text-primary mb-3">Charitable Giving Strategies for 2024 and Beyond</h3>
+                        <a href="#" class="text-primary text-sm font-medium hover:text-accent">Read More →</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition group">
+                    <div class="h-48 bg-gray-200 group-hover:opacity-90 transition"></div>
+                    <div class="p-8">
+                        <p class="text-accent text-sm mb-2">Family Office</p>
+                        <h3 class="font-serif text-xl font-semibold text-primary mb-3">When Does Your Family Need a Family Office?</h3>
+                        <a href="#" class="text-primary text-sm font-medium hover:text-accent">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div data-aos="fade-right">
+                    <p class="text-accent uppercase tracking-[0.3em] text-sm mb-4 font-medium">Private Consultation</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-8 leading-tight">
+                        Begin the Conversation
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        We work with a select number of families who value the kind of thoughtful, personalized service that defines Meridian. If you believe we may be a good fit, we would welcome the opportunity to learn more about you.
+                    </p>
+                    <div class="space-y-4 text-gray-300">
+                        <p><strong class="text-white">Phone:</strong> (555) 789-0123</p>
+                        <p><strong class="text-white">Email:</strong> private@meridianwealth.com</p>
+                        <p><strong class="text-white">Address:</strong> One Beacon Court, 22nd Floor<br>New York, NY 10022</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <form class="bg-white p-10 rounded-2xl text-gray-900">
+                        <h3 class="font-serif text-2xl font-semibold text-primary mb-6">Request a Consultation</h3>
+                        <div class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <input type="text" placeholder="First Name" class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-primary">
+                                <input type="text" placeholder="Last Name" class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-primary">
+                            </div>
+                            <input type="email" placeholder="Email" class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-primary">
+                            <input type="tel" placeholder="Phone" class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-primary">
+                            <select class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-primary text-gray-600">
+                                <option>Preferred Method of Contact</option>
+                                <option>Phone</option>
+                                <option>Email</option>
+                            </select>
+                            <textarea placeholder="How may we assist you?" rows="4" class="w-full border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-primary"></textarea>
+                            <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-medium hover:bg-opacity-90 transition">Submit Request</button>
+                            <p class="text-xs text-gray-500 text-center">All inquiries are held in strict confidence.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="font-serif text-2xl">Meridian</div>
+                <div class="flex gap-8 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white">Privacy</a>
+                    <a href="#" class="hover:text-white">Terms</a>
+                    <a href="#" class="hover:text-white">Disclosures</a>
+                </div>
+                <p class="text-gray-500 text-sm">&copy; 2024 Meridian Wealth</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 50
+        });
+    </script>
+</body>
+</html>

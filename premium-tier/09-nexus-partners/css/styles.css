@@ -1,0 +1,78 @@
+/* Nexus Partners - Premium Dark Theme */
+
+:root {
+    --color-primary: #6366f1;      /* Indigo */
+    --color-secondary: #818cf8;    /* Light indigo */
+    --color-accent: #22d3ee;       /* Cyan */
+    --color-dark: #0f172a;         /* Slate 900 */
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+::selection {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Glassmorphism */
+.backdrop-blur {
+    backdrop-filter: blur(12px);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-radial {
+    background: radial-gradient(circle at center, var(--color-primary), transparent);
+}
+
+/* Card hover effects */
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+}
+
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+
+/* Form inputs dark theme */
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-accent);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 4px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}

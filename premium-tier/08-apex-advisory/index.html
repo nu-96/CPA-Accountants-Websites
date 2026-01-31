@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Advisory Group | Elite Financial & Tax Advisory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--color-primary)',
+                        secondary: 'var(--color-secondary)',
+                        accent: 'var(--color-accent)',
+                        dark: 'var(--color-dark)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white text-gray-900 antialiased">
+    <!-- Top Bar -->
+    <div class="bg-dark text-white text-sm py-2 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex gap-6">
+                <a href="tel:5551234567" class="hover:text-accent transition">(555) 123-4567</a>
+                <a href="mailto:info@apexadvisory.com" class="hover:text-accent transition">info@apexadvisory.com</a>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-accent transition">Client Portal</a>
+                <a href="#" class="hover:text-accent transition">Careers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">A</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight">APEX</span>
+                        <span class="text-xs block text-gray-500 -mt-1">ADVISORY GROUP</span>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <div class="relative group">
+                        <a href="services.html" class="flex items-center gap-1 font-medium hover:text-primary transition">
+                            Services
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </a>
+                        <!-- Dropdown -->
+                        <div class="absolute top-full left-0 w-64 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 mt-2">
+                            <div class="p-4 space-y-2">
+                                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50">Tax Strategy</a>
+                                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50">Wealth Management</a>
+                                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50">M&A Advisory</a>
+                                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50">Audit & Assurance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="industries.html" class="font-medium hover:text-primary transition">Industries</a>
+                    <a href="team.html" class="font-medium hover:text-primary transition">Team</a>
+                    <a href="insights.html" class="font-medium hover:text-primary transition">Insights</a>
+                    <a href="contact.html" class="font-medium hover:text-primary transition">Contact</a>
+                </div>
+                <a href="contact.html" class="hidden lg:flex bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-opacity-90 transition items-center gap-2">
+                    Get Started
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-primary z-0">
+            <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml,...');"></div>
+        </div>
+        <!-- Animated shapes -->
+        <div class="absolute top-20 right-20 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 py-32 z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm mb-8">
+                        <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                        Trusted by 500+ enterprises globally
+                    </div>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+                        Strategic Advisory for the <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-300">Modern Era</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-10 max-w-xl leading-relaxed">
+                        We combine deep expertise in tax, finance, and strategy with cutting-edge technology to deliver exceptional outcomes for ambitious organizations.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="contact.html" class="group bg-accent text-dark px-8 py-4 rounded-lg font-semibold hover:bg-white transition flex items-center gap-2">
+                            Schedule Consultation
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                        <a href="services.html" class="border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-dark transition">Explore Services</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block" data-aos="fade-left" data-aos-delay="200">
+                    <div class="relative">
+                        <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="bg-white/10 rounded-xl p-6 text-center">
+                                    <div class="text-5xl font-bold text-white mb-2">$10B+</div>
+                                    <div class="text-gray-300 text-sm">Assets Under Advisory</div>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-6 text-center">
+                                    <div class="text-5xl font-bold text-accent mb-2">500+</div>
+                                    <div class="text-gray-300 text-sm">Enterprise Clients</div>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-6 text-center">
+                                    <div class="text-5xl font-bold text-white mb-2">50+</div>
+                                    <div class="text-gray-300 text-sm">Senior Advisors</div>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-6 text-center">
+                                    <div class="text-5xl font-bold text-accent mb-2">25</div>
+                                    <div class="text-gray-300 text-sm">Years Excellence</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/50 animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="py-16 bg-gray-50 border-y">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-sm text-gray-500 mb-8">TRUSTED BY INDUSTRY LEADERS</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-50">
+                <div class="h-8 w-32 bg-gray-400 rounded"></div>
+                <div class="h-8 w-28 bg-gray-400 rounded"></div>
+                <div class="h-8 w-36 bg-gray-400 rounded"></div>
+                <div class="h-8 w-32 bg-gray-400 rounded"></div>
+                <div class="h-8 w-28 bg-gray-400 rounded"></div>
+                <div class="h-8 w-32 bg-gray-400 rounded"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-primary font-semibold uppercase tracking-wider text-sm mb-2">What We Do</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Comprehensive Advisory Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Integrated solutions designed to drive growth, optimize tax efficiency, and protect your wealth.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group p-8 bg-white rounded-2xl border hover:border-primary hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tax Strategy</h3>
+                    <p class="text-gray-600 mb-4">Sophisticated tax planning to optimize your structure and minimize liability.</p>
+                    <a href="services.html" class="text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+                <div class="group p-8 bg-white rounded-2xl border hover:border-primary hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wealth Management</h3>
+                    <p class="text-gray-600 mb-4">Holistic wealth planning integrating investments, estate, and tax strategies.</p>
+                    <a href="services.html" class="text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+                <div class="group p-8 bg-white rounded-2xl border hover:border-primary hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">M&A Advisory</h3>
+                    <p class="text-gray-600 mb-4">End-to-end transaction support from valuation through post-merger integration.</p>
+                    <a href="services.html" class="text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+                <div class="group p-8 bg-white rounded-2xl border hover:border-primary hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Audit & Assurance</h3>
+                    <p class="text-gray-600 mb-4">Independent assurance services that enhance credibility and compliance.</p>
+                    <a href="services.html" class="text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Apex -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-primary font-semibold uppercase tracking-wider text-sm mb-2">Why Apex</p>
+                    <h2 class="text-4xl font-bold mb-6">A Different Kind of Advisory Firm</h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        We've built Apex around a simple premise: the best advice comes from deep expertise combined with genuine partnership. Our team brings decades of Big Four and industry experience, now focused on delivering personalized service that large firms can't match.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Senior-Led Teams</h3>
+                                <p class="text-gray-600">Every engagement is led by partners with 20+ years of experience.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Integrated Approach</h3>
+                                <p class="text-gray-600">Tax, finance, and strategy working together—not in silos.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Tech-Enabled</h3>
+                                <p class="text-gray-600">Modern tools for real-time insights and seamless collaboration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="bg-gray-200 rounded-3xl h-[500px] flex items-center justify-center">
+                        <span class="text-gray-500">Video Placeholder</span>
+                    </div>
+                    <!-- Play button overlay -->
+                    <button class="absolute inset-0 flex items-center justify-center group">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl">
+                            <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-primary font-semibold uppercase tracking-wider text-sm mb-2">Client Success</p>
+                <h2 class="text-4xl font-bold">What Our Clients Say</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">"Apex's tax restructuring saved us $2.3M in year one. Their strategic thinking is unmatched in the industry."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-gray-200 rounded-full"></div>
+                        <div>
+                            <div class="font-bold">Richard Martinez</div>
+                            <div class="text-gray-500 text-sm">CEO, TechVentures Inc</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">"They guided us through a complex merger with expertise and care. True partners in every sense."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-gray-200 rounded-full"></div>
+                        <div>
+                            <div class="font-bold">Jennifer Walsh</div>
+                            <div class="text-gray-500 text-sm">CFO, Pacific Holdings</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">"The integrated approach sets them apart. Our tax, estate, and business strategies finally work together."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-gray-200 rounded-full"></div>
+                        <div>
+                            <div class="font-bold">David Chen</div>
+                            <div class="text-gray-500 text-sm">Founder, Chen Family Office</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-gradient-to-br from-primary to-dark text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+        <div class="relative max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Elevate Your Financial Strategy?</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Schedule a confidential consultation with one of our senior advisors.</p>
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-accent text-dark px-10 py-4 rounded-xl font-semibold hover:bg-white transition text-lg">
+                Schedule Consultation
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">A</span>
+                        </div>
+                        <div>
+                            <span class="text-lg font-bold">APEX</span>
+                            <span class="text-xs block text-gray-400 -mt-1">ADVISORY GROUP</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Strategic advisory for ambitious organizations.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="services.html" class="hover:text-white transition">Tax Strategy</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Wealth Management</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">M&A Advisory</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Audit & Assurance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="team.html" class="hover:text-white transition">Our Team</a></li>
+                        <li><a href="industries.html" class="hover:text-white transition">Industries</a></li>
+                        <li><a href="insights.html" class="hover:text-white transition">Insights</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>(555) 123-4567</li>
+                        <li>info@apexadvisory.com</li>
+                        <li>1 World Trade Center, 85th Floor<br>New York, NY 10007</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2024 Apex Advisory Group. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Client Portal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>

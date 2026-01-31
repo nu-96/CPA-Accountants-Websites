@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | SmallBiz CPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: 'var(--color-primary)', accent: 'var(--color-accent)' } } } }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Nav -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold">SB</div>
+                <span class="text-xl font-bold">SmallBiz<span class="text-primary">CPA</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="resources.html" class="text-primary">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Small Business Resources</h1>
+            <p class="text-blue-100 max-w-2xl mx-auto">Free guides, tips, and tools to help your business thrive</p>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Free Downloads -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold mb-8">Free Downloads</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="border rounded-xl p-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 text-2xl">📋</div>
+                        <h3 class="font-bold mb-2">Tax Deduction Checklist</h3>
+                        <p class="text-gray-600 text-sm mb-4">50+ deductions you might be missing</p>
+                        <a href="#" class="text-primary font-medium text-sm">Download PDF →</a>
+                    </div>
+                    <div class="border rounded-xl p-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 text-2xl">📊</div>
+                        <h3 class="font-bold mb-2">Expense Tracker Template</h3>
+                        <p class="text-gray-600 text-sm mb-4">Simple spreadsheet to track spending</p>
+                        <a href="#" class="text-primary font-medium text-sm">Download Excel →</a>
+                    </div>
+                    <div class="border rounded-xl p-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 text-2xl">📅</div>
+                        <h3 class="font-bold mb-2">Tax Deadline Calendar</h3>
+                        <p class="text-gray-600 text-sm mb-4">Never miss an important date</p>
+                        <a href="#" class="text-primary font-medium text-sm">Download PDF →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Posts -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold mb-8">Latest Articles</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <article class="border rounded-xl overflow-hidden">
+                        <div class="h-40 bg-gray-100"></div>
+                        <div class="p-6">
+                            <span class="text-xs text-gray-500">Jan 15, 2024</span>
+                            <h3 class="font-bold mt-2 mb-2">5 Signs You Need a Bookkeeper</h3>
+                            <a href="#" class="text-primary text-sm font-medium">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="border rounded-xl overflow-hidden">
+                        <div class="h-40 bg-gray-100"></div>
+                        <div class="p-6">
+                            <span class="text-xs text-gray-500">Jan 10, 2024</span>
+                            <h3 class="font-bold mt-2 mb-2">QuickBooks vs Xero: Which is Right for You?</h3>
+                            <a href="#" class="text-primary text-sm font-medium">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="border rounded-xl overflow-hidden">
+                        <div class="h-40 bg-gray-100"></div>
+                        <div class="p-6">
+                            <span class="text-xs text-gray-500">Jan 5, 2024</span>
+                            <h3 class="font-bold mt-2 mb-2">How to Separate Personal and Business Finances</h3>
+                            <a href="#" class="text-primary text-sm font-medium">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="bg-primary text-white p-8 rounded-2xl text-center">
+                <h2 class="text-2xl font-bold mb-4">Get Weekly Tips in Your Inbox</h2>
+                <p class="text-blue-100 mb-6">Join 5,000+ small business owners who get our free weekly newsletter.</p>
+                <form class="flex flex-col md:flex-row gap-4 justify-center max-w-md mx-auto">
+                    <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg text-gray-800 flex-1">
+                    <button class="bg-accent text-white px-6 py-3 rounded-lg font-medium">Subscribe Free</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
+            &copy; 2024 SmallBiz CPA. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
