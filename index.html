@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPA Website Portfolio | Luniero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a5f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .tier-badge {
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">L</span>
+                    </div>
+                    <span class="font-semibold text-gray-900">Luniero</span>
+                </div>
+                <a href="#contact" class="bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-brand-700 transition">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Professional Websites for<br>CPAs & Accountants
+            </h1>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+                Modern, conversion-focused websites designed specifically for accounting firms. 
+                Choose your style, get online fast.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#budget" class="bg-white text-brand-900 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
+                    View Templates
+                </a>
+                <a href="#contact" class="border border-white/30 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition">
+                    Request Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="bg-white py-12 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-brand-600">10+</div>
+                    <div class="text-gray-600 text-sm">Template Designs</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-brand-600">100%</div>
+                    <div class="text-gray-600 text-sm">Mobile Responsive</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-brand-600">48hr</div>
+                    <div class="text-gray-600 text-sm">Avg. Delivery</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-brand-600">SEO</div>
+                    <div class="text-gray-600 text-sm">Optimized</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Tier -->
+    <section id="budget" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-green-100 text-green-700 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    Budget Tier • $500–$750
+                </span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Starter Websites</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Clean, professional single-page designs perfect for solo practitioners and small firms getting started online.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Essential CPA -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white/80 text-lg font-medium">Essential CPA</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-green-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $500
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Essential CPA</h3>
+                        <p class="text-gray-600 text-sm mb-4">Classic professional single-page design with hero, services, testimonials, and contact form.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Single Page</span>
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Contact Form</span>
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Testimonials</span>
+                        </div>
+                        <a href="budget-tier/01-essential-cpa/index.html" target="_blank" class="block text-center bg-gray-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clarity Accounting -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-800 to-blue-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white/80 text-lg font-medium">Clarity Accounting</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-green-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $600
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Clarity Accounting</h3>
+                        <p class="text-gray-600 text-sm mb-4">Modern minimalist design with stats bar, clean icons, and transparent pricing feel.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Minimalist</span>
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Stats Bar</span>
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Modern</span>
+                        </div>
+                        <a href="budget-tier/02-clarity-accounting/index.html" target="_blank" class="block text-center bg-gray-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Trustpoint CPA -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-emerald-800 to-emerald-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white/80 text-lg font-medium">Trustpoint CPA</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-green-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $750
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">Trustpoint CPA</h3>
+                        <p class="text-gray-600 text-sm mb-4">Trust-focused design with personal CPA bio section, trust badges, and 6 service areas.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Trust Badges</span>
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Bio Section</span>
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">6 Services</span>
+                        </div>
+                        <a href="budget-tier/03-trustpoint-cpa/index.html" target="_blank" class="block text-center bg-gray-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Tier -->
+    <section id="mid" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    Mid Tier • $1,000–$1,500
+                </span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Professional Websites</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Multi-page websites with blog capabilities, team profiles, and sophisticated layouts for growing firms.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Summit Financial -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-40 bg-gradient-to-br from-indigo-800 to-indigo-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white/80 font-medium">Summit Financial</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-blue-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $1,000
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-2">Summit Financial</h3>
+                        <p class="text-gray-600 text-sm mb-3">5-page professional site with blog and team profiles.</p>
+                        <a href="mid-tier/04-summit-financial/index.html" target="_blank" class="text-brand-600 text-sm font-medium hover:text-brand-700">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Precision Tax -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-40 bg-gradient-to-br from-red-800 to-red-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white/80 font-medium">Precision Tax</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-blue-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $1,200
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-2">Precision Tax</h3>
+                        <p class="text-gray-600 text-sm mb-3">Strategy-focused with industry expertise and resources.</p>
+                        <a href="mid-tier/05-precision-tax/index.html" target="_blank" class="text-brand-600 text-sm font-medium hover:text-brand-700">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Heritage Advisors -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-40 bg-gradient-to-br from-amber-800 to-amber-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white/80 font-medium">Heritage Advisors</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-blue-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $1,350
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-2">Heritage Advisors</h3>
+                        <p class="text-gray-600 text-sm mb-3">Elegant family wealth theme with serif typography.</p>
+                        <a href="mid-tier/06-heritage-advisors/index.html" target="_blank" class="text-brand-600 text-sm font-medium hover:text-brand-700">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SmallBiz CPA -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-40 bg-gradient-to-br from-teal-800 to-teal-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white/80 font-medium">SmallBiz CPA</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-blue-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $1,500
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-2">SmallBiz CPA</h3>
+                        <p class="text-gray-600 text-sm mb-3">Small business focus with pricing table and resources.</p>
+                        <a href="mid-tier/07-smallbiz-cpa/index.html" target="_blank" class="text-brand-600 text-sm font-medium hover:text-brand-700">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Tier -->
+    <section id="premium" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-amber-500/20 text-amber-400 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    Premium Tier • $2,000–$2,500+
+                </span>
+                <h2 class="text-3xl font-bold text-white mb-4">Enterprise Websites</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Full-featured templates with animations, modern effects, and enterprise-grade design for established firms.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Apex Advisory -->
+                <div class="bg-white/5 backdrop-blur rounded-2xl overflow-hidden border border-white/10 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-violet-600 to-purple-800 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white text-lg font-medium">Apex Advisory</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-amber-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $2,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-white mb-2">Apex Advisory</h3>
+                        <p class="text-gray-400 text-sm mb-4">Enterprise-grade with AOS animations, dropdown nav, video hero, and gradient effects.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Animations</span>
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Video Hero</span>
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Dropdown Nav</span>
+                        </div>
+                        <a href="premium-tier/08-apex-advisory/index.html" target="_blank" class="block text-center bg-white text-gray-900 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Nexus Partners -->
+                <div class="bg-white/5 backdrop-blur rounded-2xl overflow-hidden border border-white/10 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-cyan-600 to-blue-800 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white text-lg font-medium">Nexus Partners</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-amber-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $2,250
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-white mb-2">Nexus Partners</h3>
+                        <p class="text-gray-400 text-sm mb-4">Startup/tech-focused with dark theme, glassmorphism, and scroll-responsive navigation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Dark Theme</span>
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Glassmorphism</span>
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Modern</span>
+                        </div>
+                        <a href="premium-tier/09-nexus-partners/index.html" target="_blank" class="block text-center bg-white text-gray-900 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Meridian Wealth -->
+                <div class="bg-white/5 backdrop-blur rounded-2xl overflow-hidden border border-white/10 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-stone-600 to-stone-800 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white text-lg font-medium">Meridian Wealth</span>
+                        </div>
+                        <div class="absolute top-3 right-3 tier-badge bg-amber-500/90 text-white text-xs px-2 py-1 rounded-full">
+                            $2,500
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-white mb-2">Meridian Wealth</h3>
+                        <p class="text-gray-400 text-sm mb-4">Ultra-luxury private client design with serif typography and editorial asymmetric layout.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Luxury</span>
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Editorial</span>
+                            <span class="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">Asymmetric</span>
+                        </div>
+                        <a href="premium-tier/10-meridian-wealth/index.html" target="_blank" class="block text-center bg-white text-gray-900 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition">
+                            View Demo →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What's Included</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Every website comes with everything you need to succeed online.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Mobile Responsive</h3>
+                    <p class="text-gray-600 text-sm">Looks perfect on every device — phone, tablet, or desktop.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">SEO Optimized</h3>
+                    <p class="text-gray-600 text-sm">Built to rank on Google with proper structure and meta tags.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Fast Loading</h3>
+                    <p class="text-gray-600 text-sm">Optimized code means your site loads in under 2 seconds.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Easy Edits</h3>
+                    <p class="text-gray-600 text-sm">Clean code makes future updates simple and affordable.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">SSL Secure</h3>
+                    <p class="text-gray-600 text-sm">HTTPS encryption included — builds trust with visitors.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Contact Forms</h3>
+                    <p class="text-gray-600 text-sm">Lead capture forms that send inquiries straight to your inbox.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section id="contact" class="py-20 bg-brand-900">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+            <p class="text-blue-100 mb-8">
+                Let's build a website that brings in clients. Pick a template, or tell me what you need — I'll handle the rest.
+            </p>
+            <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+                <div class="grid md:grid-cols-2 gap-6 text-left mb-6">
+                    <div>
+                        <div class="text-blue-200 text-sm mb-1">Email</div>
+                        <a href="mailto:amari@luniero.com" class="text-white font-medium hover:text-blue-200">amari@luniero.com</a>
+                    </div>
+                    <div>
+                        <div class="text-blue-200 text-sm mb-1">Response Time</div>
+                        <div class="text-white font-medium">Within 24 hours</div>
+                    </div>
+                </div>
+                <a href="mailto:amari@luniero.com?subject=Website%20Inquiry" class="inline-block bg-white text-brand-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+                    Request a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-6 h-6 bg-brand-600 rounded flex items-center justify-center">
+                    <span class="text-white font-bold text-xs">L</span>
+                </div>
+                <span class="font-medium text-white">Luniero</span>
+            </div>
+            <p class="text-sm">Professional websites for CPAs & accountants</p>
+            <p class="text-sm mt-2">© 2026 Luniero. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
